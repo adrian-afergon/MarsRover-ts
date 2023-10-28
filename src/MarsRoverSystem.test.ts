@@ -27,4 +27,12 @@ describe("Mars Rover System", () => {
     });
   });
 
+  describe("has postion", () => {
+    it("should return actual position", () => {
+      const position = new MarsRoverSystem().landRoverAtMars("0:0:N");
+
+      expect(new MarsRoverSystem().hasPosition('0:0:N')).toBeTruthy();
+    });
+  });
+
 });
